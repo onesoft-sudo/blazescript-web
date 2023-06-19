@@ -1,0 +1,58 @@
+.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #007bff;
+    border-radius: 5px;
+    display: block;
+    z-index: 1;
+}
+
+.ul {
+    list-style: none;
+    display: inline-flex;
+    align-items: flex-start;
+}
+
+.activated {
+    left: 0 !important;
+}
+
+@media (max-width: 970px) {
+    .ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100vw;
+        max-height: 100vh;
+        min-height: 100vh;
+        overflow-y: scroll;
+        width: 80vw;
+        background: #333;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+
+    .ul li {
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    .active::after {
+        height: 100%;
+        width: 3px;
+    }
+}
