@@ -1,4 +1,4 @@
 .main {
     min-height: calc(100vh - 53px);
-    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2));
 }
