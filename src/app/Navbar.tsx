@@ -29,7 +29,7 @@ const Navbar: FC = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="p-2 flex items-start">
+        <nav className="p-2 py-0 flex items-center relative">
             {open && <div className={styles.overlay + " md:hidden"} onClick={() => setOpen(false)}></div>}
 
             <Button onClick={() => setOpen(true)} style={{ minWidth: 0 }} className="md:hidden mr-3">
@@ -37,7 +37,7 @@ const Navbar: FC = () => {
             </Button>
 
             <Link href="/" className='md:mr-10'>
-                <Image src={LogoOriginal} className='h-[35px] md:h-[50px] w-[auto]' alt="BlazeScript" />
+                <Image src={LogoOriginal} className='h-[35px] md:h-[40px] w-[auto]' alt="BlazeScript" />
             </Link>
 
             <ul className={styles.ul + ` ${open ? styles.activated : ''}`}>
@@ -48,11 +48,11 @@ const Navbar: FC = () => {
                 </li>
 
                 {navbarLinks.map(link => (
-                    <li key={link.path} className={`mx-1 px-3 py-3 relative ${pathname === link.path ? styles.active : ""}`}><Link className="no-underline text-[#ccc] hover:text-[#fff]" href={link.path}>{link.name}</Link></li>
+                    <li key={link.path} className={`mx-1 px-3 py-4 relative ${pathname === link.path ? styles.active : ""}`}><Link className="no-underline text-[#ccc] hover:text-[#fff]" href={link.path}>{link.name}</Link></li>
                 ))}
             </ul>
 
-            <div className='absolute top-3 right-3 hidden md:block'>
+            <div className='absolute top-1 right-2 hidden md:block'>
                 <Button style={{ textTransform: 'none', padding: "7px 15px" }} className='mr-3' variant='outlined'>Discord</Button>
                 <Button style={{ textTransform: 'none', padding: "7px 15px" }} variant='outlined'>GitHub</Button>
             </div>
