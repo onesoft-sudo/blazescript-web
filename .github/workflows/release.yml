@@ -16,7 +16,7 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3.15.0
         with:
-          github-token: ${{ secrets.__TOKEN }}
+          github-token: ${{ secrets.WORKFLOW_SECRET_2 }}
           version-file: './package.json,./package-lock.json'
           git-user-name: "Conventional Release Action"
           git-user-email: rakinar2@onesoftnet.eu.org
@@ -25,7 +25,7 @@ jobs:
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.__TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.WORKFLOW_SECRET_2 }}
         with:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
