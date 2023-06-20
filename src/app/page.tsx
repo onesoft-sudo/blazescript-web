@@ -1,11 +1,10 @@
 import Examples from './Examples';
-import Top from './Top';
+import Header from './Header';
 
 export default function Home() {
     return (
         <div>
-            <Top />
-            <br />
+            <Header />
             <br />
             <br />
             <Examples />

@@ -4,7 +4,7 @@ import { FC } from 'react';
 import Logo from '../assets/blaze_square.png';
 import styles from './Home.module.css';
 
-const Top: FC = () => {
+const Header: FC = () => {
     return (
         <div className={styles.main}>
             <Image className="md:pt-10 pt-4 mx-auto block mb-10" src={Logo} alt="Logo" />
@@ -23,15 +23,18 @@ const Top: FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 md:max-w-[40vw] mx-auto px-2 md:px-0">
                 <CustomButton className="px-5 block" variant="outlined">
                     <span className='text-center block'>Download</span>
-                    <small className='text-center block text-sm'>v1.0.0-beta1</small>
+                    <small className='text-center block text-xs'>v1.0.0-beta1</small>
                 </CustomButton>
                 <CustomButton className="px-5 mt-3 md:mt-0 md:ml-3 block" variant="outlined">
                     <span className='text-center block'>Documentation</span>
-                    <small className='text-center block text-sm'>Updated 1 day ago</small>
+                    <small className='text-center block text-xs'>Updated 1 day ago</small>
                 </CustomButton>
             </div>
+
+            <br />
+            <br />
         </div>
     );
 };
 
-export default Top;
+export default Header;

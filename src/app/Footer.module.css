@@ -1,0 +1,19 @@
+.footer ul li {
+    color: #ccc;
+    @apply mb-4;
+}
+
+.footer ul li:hover {
+    color: #fff;
+}
+
+.footer {
+    background: #222;
+    padding: 20px 0;
+}
+
+@media (max-width: 970px) {
+    .footer {
+        padding: 20px 10px;
+    }
+}
