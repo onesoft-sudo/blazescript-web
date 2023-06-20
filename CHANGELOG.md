@@ -1,3 +1,12 @@
+# [0.3.0](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.2...v0.3.0) (2023-06-20)
+
+
+### Features
+
+* complete home page ([a6860fd](https://github.com/onesoft-sudo/blazescript-web/commit/a6860fd437a7528b688ad9702aab3dac5f152a16))
+
+
+
 ## [0.2.2](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.1...v0.2.2) (2023-06-20)
 
 
