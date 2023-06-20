@@ -1,4 +1,13 @@
-# 0.2.0 (2023-06-20)
+## [0.2.1](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.0...v0.2.1) (2023-06-20)
+
+
+### Bug Fixes
+
+* using metadata export and client side rendering in the same component ([46dbc2f](https://github.com/onesoft-sudo/blazescript-web/commit/46dbc2fa717a54785059db8cde850e351e0d5159))
+
+
+
+# [0.2.0](https://github.com/onesoft-sudo/blazescript-web/compare/67ff4ce370a05bcdcb373334a23a7090d74895c9...v0.2.0) (2023-06-20)
 
 
 ### Features
