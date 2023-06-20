@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/onesoft-sudo/blazescript-web/compare/v0.3.0...v0.4.0) (2023-06-20)
+
+
+### Features
+
+* add mdx docs folder ([f749331](https://github.com/onesoft-sudo/blazescript-web/commit/f749331ee1ecebbb33649ab0d43be630ca78ef53))
+
+
+
 # [0.3.0](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.2...v0.3.0) (2023-06-20)
 
 
