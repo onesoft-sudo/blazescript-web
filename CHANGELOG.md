@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.1...v0.2.2) (2023-06-20)
+
+
+### Bug Fixes
+
+* eslint errors ([027731f](https://github.com/onesoft-sudo/blazescript-web/commit/027731f0c50b4e1ca7968eff01c9c88904d305f8))
+
+
+
 ## [0.2.1](https://github.com/onesoft-sudo/blazescript-web/compare/v0.2.0...v0.2.1) (2023-06-20)
 
 
